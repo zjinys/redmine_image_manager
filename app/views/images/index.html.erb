@@ -4,4 +4,31 @@
 
 <h2><%= l(:label_images_list) %></h2>
 
-
+<% unless @images.empty? %>
+<table class="list files">
+  <thead><tr>
+    <th><%= l(:field_id) %></th>
+    <th><%= l(:field_image_name)%></th>
+    <th><%= l(:field_image_file_name)%></th>
+    <th><%= l(:field_image_type)%></th>
+    <th><%= l(:field_image_spec)%></th>
+    <th><%= l(:field_finish_time)%></th>
+    <th><%= l(:field_create_by)%></th>
+  </tr></thead>
+  <tbody>
+<% @images.each do |image| %>
+  <tr class="file <%= cycle("odd", "even") %>">
+    <td class="id"><%= image.id %></td>
+    <td class="name"><%= image.name %></td>
+    <td class="file_name"><%= image.file_name %></td>
+    <td class="type"><%= image.img_type %></td>
+    <td class="spec"><%= image.spec %></td>
+    <td class="spec"><%= image.finish_time %></td>
+    <td class="spec"><%= image.author %></td>
+  </tr>
+  <% end%>
+  </tbody>
+</table>
+<% else %>
+  <p class="nodata"><%=l(:label_no_data)%></p>
+<% end %>

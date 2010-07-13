@@ -5,7 +5,7 @@ class ImagesController < ApplicationController
   
   def index
     
-    
+    @images = Image.find(:all,:conditions=>['status=1 and project_id=?',@project.id])
   end
 
   def new

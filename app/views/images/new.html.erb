@@ -1,5 +1,5 @@
 <div class="contextual">
-  <%= link_to l(:label_image_new), {:controller => 'images', :action => 'new', :id => @project},
+  <%= link_to l(:label_image_new), {:controller => 'images', :action => 'new', :project_id => @project.id},
               :class => 'icon icon-add',:multipart => true %>
 </div>
 

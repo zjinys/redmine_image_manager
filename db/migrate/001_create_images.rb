@@ -9,7 +9,7 @@ class CreateImages < ActiveRecord::Migration
       t.column :name, :string
       t.column :finish_time, :datetime
       t.column :project_id, :integer
-      t.column :create_by, :integer
+      t.column :author_id, :integer
     end
   end
 

@@ -12,4 +12,5 @@ en:
   field_image_finish_time: Finished time
   field_image_memo: Description
   label_images_list: Pending Images
-  
+  field_finish_time: Finished time
+  field_create_by: Create by
