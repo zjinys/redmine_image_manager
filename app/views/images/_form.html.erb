@@ -1,0 +1,26 @@
+<%= error_messages_for 'image' %>
+
+<div class="box">
+  <p>
+    <%= f.text_field 'name', :label=>l(:field_image_name) -%>
+  </p>
+  <p>
+    <%= f.text_field 'img_type', :label=>l(:field_image_type) -%>
+  </p>
+  <p>
+    <%= f.text_field 'file_name', :label=>l(:field_image_file_name) -%>
+  </p>
+  <p>
+    <%= f.text_field 'svn_repo', :label=>l(:field_image_svn_repo) -%>
+  </p>
+  <p>
+    <%= f.text_field 'svn_path', :label=>l(:field_image_svn_path) -%>
+  </p>
+  <p>
+    <%= f.text_field 'spec', :label=>l(:field_image_spec) -%>
+  </p>
+  <p>
+    <%= f.text_field 'finish_time', :label=>l(:field_image_finish_time) -%>
+  </p>
+  
+</div>

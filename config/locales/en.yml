@@ -1,3 +1,15 @@
 # English strings go here for Rails i18n
 en:
   my_label: "My label"
+  label_image_new: New
+  field_id: Id
+  field_image_name: Image Name
+  field_image_type: Image Type
+  field_image_file_name: File Name
+  field_image_svn_repo: Svn Repo
+  field_image_svn_path: Place Path
+  field_image_spec: Image Spec
+  field_image_finish_time: Finished time
+  field_image_memo: Description
+  label_images_list: Pending Images
+  

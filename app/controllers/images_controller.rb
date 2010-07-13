@@ -13,8 +13,8 @@ class ImagesController < ApplicationController
     if request.post?
       @image.attributes = params[:image]
       if @image.save
-        attachments = Attachment.attach_files(@image, params[:attachments])
-        render_attachment_warning_if_needed(@image)
+        #attachments = Attachment.attach_files(@image, params[:attachments])
+        #render_attachment_warning_if_needed(@image)
 
         flash[:notice] = l(:notice_successful_create)
         redirect_to :action => "index", :project_id => params[:project_id]
