@@ -27,7 +27,11 @@ class ImagesController < ApplicationController
   end
 
   def show
-    @image = Image.find_by_id(params[:id])    
+    @image = Image.find_by_id(params[:id])
+    @image.attachments.each do |file|
+      p file['id']
+      p file['filename']
+    end
   end
 
   private

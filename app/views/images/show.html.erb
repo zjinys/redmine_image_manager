@@ -3,3 +3,9 @@
 <p><% unless @image.memo.blank? %><em><%=h @image.memo %></em><br /><% end %>
 
 <h3><%= l(:label_attachment_plural) %></h3>
+<% @image.attachments.each do |file| %>
+  <%= link_to h(file['filename']),:controller => 'attachments',
+              :action => 'show',
+              :id => file['id'],
+              :filename => file['filename'] %>
+<% end %>
