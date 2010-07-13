@@ -1,16 +1,16 @@
 # English strings go here for Rails i18n
 en:
   my_label: "My label"
-  label_image_new: ??
-  field_id: ??
-  field_image_name: ????
-  field_image_type: ????
-  field_image_file_name: ????
-  field_image_svn_repo: Svn???
-  field_image_svn_path: Svn??
-  field_image_spec: ????
-  field_image_finish_time: ??????
-  field_image_memo: ??
-  label_images_list: ?????
-  field_finish_time: ??????
-  field_create_by: ???
+  label_image_new: 新建
+  field_id: 编号
+  field_image_name: 图片名称
+  field_image_type: 图片类型
+  field_image_file_name: 文件名称
+  field_image_svn_repo: Svn库
+  field_image_svn_path: Svn路径
+  field_image_spec: 图片规格
+  field_image_finish_time: 要求完成时间
+  field_image_memo: 备注
+  label_images_list: 待处理图片
+  field_finish_time: 要求完成时间
+  field_create_by: 提交人
