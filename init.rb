@@ -8,7 +8,7 @@ Redmine::Plugin.register :redmine_image_manager do
   url 'http://example.com/path/to/plugin'
   author_url 'http://example.com/about'
 
-  permission :images,{:images=>[:index]},:public=>true
+  permission :images,{:images=>[:index,:new,:show]},:public=>true
   menu :project_menu,:images,{:controller=>'images',:action=>'index'},:caption=>'Images',:param => :project_id
   
 end

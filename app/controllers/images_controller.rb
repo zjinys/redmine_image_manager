@@ -1,7 +1,7 @@
 class ImagesController < ApplicationController
   unloadable
 
-  before_filter :find_project
+  before_filter :find_project,:authorize
   
   helper :attachments
   include AttachmentsHelper
