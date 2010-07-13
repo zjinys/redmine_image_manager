@@ -21,7 +21,14 @@
     <td class="id"><%= link_to h(image.id), :controller => 'images', :action => 'show', :id => image.id ,:project_id => @project.id%></td>
     <td class="name"><%= image.name %></td>
     <td class="file_name"><%= image.file_name %></td>
-    <td class="type"><%= image.img_type %></td>
+    <td class="type">
+      <% if image.img_type == '0' %>
+        Data
+      <% else %>
+        Program
+      <% end %>
+
+    </td>
     <td class="spec"><%= image.spec %></td>
     <td class="spec"><%= image.finish_time %></td>
     <td class="spec"><%= image.author %></td>
