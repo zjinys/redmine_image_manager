@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+one:
+  id: 1
+  img_type: MyString
+  spec: MyString
+  file_name: MyString
+  svn_repo: MyString
+  svn_path: MyString
+  name: MyString
+  finish_time: 2010-07-13 16:13:39
+  project_id: 1
+  create_by: 1
+two:
+  id: 2
+  img_type: MyString
+  spec: MyString
+  file_name: MyString
+  svn_repo: MyString
+  svn_path: MyString
+  name: MyString
+  finish_time: 2010-07-13 16:13:39
+  project_id: 1
+  create_by: 1
