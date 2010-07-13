@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="3a808cc5-e3ea-425d-bf8d-ef38a0142717" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init.rb" afterPath="$PROJECT_DIR$/init.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="redmine_image_manager.iws" />
