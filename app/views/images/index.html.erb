@@ -18,7 +18,7 @@
   <tbody>
 <% @images.each do |image| %>
   <tr class="file <%= cycle("odd", "even") %>">
-    <td class="id"><%= image.id %></td>
+    <td class="id"><%= link_to h(image.id), :controller => 'images', :action => 'show', :id => image.id ,:project_id => @project.id%></td>
     <td class="name"><%= image.name %></td>
     <td class="file_name"><%= image.file_name %></td>
     <td class="type"><%= image.img_type %></td>

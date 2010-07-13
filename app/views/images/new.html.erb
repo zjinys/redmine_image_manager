@@ -5,7 +5,13 @@
 
 <h2><%= l(:label_image_new) %></h2>
 
-<% labelled_tabular_form_for :image, @image, :url =>{:action => 'new', :project_id => @project} do |f|  %>
+<% labelled_tabular_form_for :image, @image, :url =>{:action => 'new', :project_id => @project},
+                             :html => {:multipart => true} do |f|  %>
   <%= render :partial => 'form', :locals => {:f => f}  %>
+
+    <div class="box">
+    <p><label><%=l(:label_attachment_plural)%></label><%= render :partial => 'attachments/form' %></p>
+    </div>
+    
   <%= submit_tag l(:button_save) -%>
 <% end -%>

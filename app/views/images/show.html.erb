@@ -1,1 +1,5 @@
-<h2>Images#show</h2>
+<h2><%= @image.name %></h2>
+
+<p><% unless @image.memo.blank? %><em><%=h @image.memo %></em><br /><% end %>
+
+<h3><%= l(:label_attachment_plural) %></h3>
