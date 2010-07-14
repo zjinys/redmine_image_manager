@@ -1,7 +1,7 @@
 class ImagesController < ApplicationController
   unloadable
 
-  before_filter :find_project,:authorize
+  before_filter :find_project,:authorize, :except => :svninfo
   
   helper :attachments
   include AttachmentsHelper
@@ -26,12 +26,14 @@ class ImagesController < ApplicationController
     end
   end
 
+  def svninfo
+    image = Image.find_by_id(params[:id])
+    svn_info = image.svn_repo + ":" + image.svn_path
+    render :text=>svn_info
+  end
+  
   def show
     @image = Image.find_by_id(params[:id])
-    @image.attachments.each do |file|
-      p file['id']
-      p file['filename']
-    end
   end
 
   private
