@@ -1,5 +1,5 @@
 # English strings go here for Rails i18n
-en:
+zh:
   my_label: "My label"
   label_image_new: 新建
   field_id: 编号
