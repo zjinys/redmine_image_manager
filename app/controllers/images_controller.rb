@@ -7,7 +7,8 @@ class ImagesController < ApplicationController
   include AttachmentsHelper
   
   def index
-    @images = Image.find(:all,:conditions=>['status=1 and project_id=?',@project.id])
+    @image_pages, @images = paginate :images,:per_page => 10,:conditions=>['status=1 and project_id=?',@project.id]
+    render :action => "index", :layout => false if request.xhr?
   end
 
   def new
