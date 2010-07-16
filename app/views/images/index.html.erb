@@ -13,6 +13,8 @@
     <th><%= l(:field_image_type)%></th>
     <th><%= l(:field_image_spec)%></th>
     <th><%= l(:field_finish_time)%></th>
+    <th><%= l(:field_image_svn_repo)%></th>
+    <th><%= l(:field_image_svn_path)%></th>
     <th><%= l(:field_create_by)%></th>
   </tr></thead>
   <tbody>
@@ -27,10 +29,11 @@
       <% else %>
         Program
       <% end %>
-
     </td>
     <td class="spec"><%= image.spec %></td>
     <td class="spec"><%= image.finish_time %></td>
+    <td class="spec"><%= image.svn_repo %></td>
+    <td class="spec"><%= image.svn_path %></td>
     <td class="spec"><%= image.author %></td>
   </tr>
   <% end%>
